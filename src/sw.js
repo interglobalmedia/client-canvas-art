@@ -1,0 +1,1 @@
+workbox.precaching.precacheAndRoute(window.self.__precacheManifest || [])

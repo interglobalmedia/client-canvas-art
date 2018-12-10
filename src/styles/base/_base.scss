@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    padding-top: 1px;
+}
+
+html,
+body {
+    background: rgba(255, 204, 152, 1);
+}
+
+canvas {
+    padding-top: 1vh;
+    margin: -100px auto -130px;
+    display: block;
+    background-size: 900 500;
+    background-position: center center fixed;
+    z-index: 0;
+}

@@ -1,0 +1,52 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true,
+        "serviceworker": true
+    },
+    "extends": ["prettier"],
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "import",
+        "prettier"
+    ],
+    "rules": {
+        "no-unused-vars": 0,
+        "no-console": 0,
+        "import/no-extraneous-dependencies": [
+            "error",
+            {
+                "devDependencies": true
+            }
+        ],
+        "indent": [
+            0
+        ],
+        "linebreak-style": [
+            "off",
+            "eol-last"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            0
+        ]
+    },
+    "globals": {
+        "window": true,
+        "document": true,
+        "localStorage": true,
+        "FormData": true,
+        "FileReader": true,
+        "Blob": true,
+        "navigator": true,
+        "speechSynthesis": true
+    }
+}
