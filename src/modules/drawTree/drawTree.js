@@ -2,6 +2,12 @@ import {
     createCanopyPath
 } from '../treeCanopy/treeCanopyPath';
 
+const bark = new Image()
+bark.src = '/images/bark.jpg'
+bark.onload = function() {
+    drawTree()
+}
+
 export function drawTree() {
     const canvas = document.getElementById('canvas')
     const context = canvas.getContext('2d')
@@ -21,6 +27,7 @@ export function drawTree() {
     context.fill()
     context.fillStyle = 'rgba(99,37,14,1)'
     context.fillRect(-5, -50, 10, 50)
+    context.drawImage(bark, -5, -50, 10, 50)
     context.restore()
 }
 
