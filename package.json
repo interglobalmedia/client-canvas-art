@@ -50,7 +50,8 @@
         "workbox-webpack-plugin": "^3.6.3"
     },
     "dependencies": {
-        "autoprefixer": "^9.4.2"
+        "autoprefixer": "^9.4.2",
+        "webfontloader": "^1.6.28"
     },
     "scripts": {
         "lint": "eslint .",

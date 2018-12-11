@@ -11,7 +11,7 @@ try {
 import {
     drawCanvas
 }
-from './modules/canvas/drawCanvas'
+from './modules/canvas/drawCanvas';
 drawCanvas();
 
-import './styles/styles.scss'
+import './styles/styles.scss';

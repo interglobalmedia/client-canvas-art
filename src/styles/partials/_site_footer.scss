@@ -1,7 +1,16 @@
 /* footer basic styling */
 
 footer {
-    position: relative;
+    position: fixed;
+    max-width: 100wh;
+    width: 100%;
+    height: 50px;
+    top: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 10;
 }
 
 .site-footer {
@@ -9,10 +18,8 @@ footer {
 }
 
 footer p {
-    text-align: center;
     font-family: 'Muli', sans-serif;
     color: rgba(130, 161, 143, 1);
     letter-spacing: 0.1em;
-    font-size: 100%;
-    margin-top: 110px;
+    font-size: 75%;
 }
