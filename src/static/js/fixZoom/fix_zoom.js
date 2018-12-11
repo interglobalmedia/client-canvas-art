@@ -20,7 +20,7 @@
                 paddingY = py || 0,
                 winHeight = winHeight || window.innerHeight,
                 winWidth = winWidth || window.innerWidth,
-                container = document.querySelector('#canvas'),
+                container = document.querySelector('.wrapper'),
                 scalex = Math.floor((winHeight - paddingY) / pageHeight * 1000) / 1000,
                 scaley = Math.floor((winWidth - paddingX) / pageWidth * 1000) / 1000,
                 scale = Math.min(scalex, scaley),

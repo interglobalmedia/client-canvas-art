@@ -15,9 +15,19 @@ html {
 }
 
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-transition: all 400ms;
+    -moz-transition: all 400ms;
+    -ms-transition: all 400ms;
+    -o-transition: all 400ms;
+    transition: all 400ms;
+}
+
+p {
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: normal;
+    font-family: 'Muli', sans-serif;
+    color: rgba(212, 11, 41, 1);
 }
 
 canvas {
@@ -26,10 +36,7 @@ canvas {
     width: 100%;
     width: 900px;
     height: 500px;
+    background-size: 900px 500px;
+    background-position: center center;
     background: rgba(239, 192, 112, 1);
-    -webkit-transition: all 400ms;
-    -moz-transition: all 400ms;
-    -ms-transition: all 400ms;
-    -o-transition: all 400ms;
-    transition: all 400ms;
 }
