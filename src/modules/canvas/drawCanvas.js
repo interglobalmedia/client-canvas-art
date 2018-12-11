@@ -5,8 +5,8 @@ import {
 } from '../displayText/displayText';
 // draw tree canopy path
 import {
-    drawTree
-} from '../drawTree/drawTree';
+    drawTrees
+} from '../drawTrees/drawTrees';
 
 import {
     curvyPath
@@ -51,7 +51,8 @@ export function drawCanvas() {
     context.strokeRect(-5, 0, canvas.width, canvas.height);
     canvas.innerHTML = `<canvas id="canvas" class="${styles.canvas}">< /canvas>`;
     displayText();
-    drawTree();
     curvyPath();
+    drawTrees();
+
 
 }

@@ -11,10 +11,10 @@ html {
     margin: 0;
     border: 0;
     background: rgba(255, 204, 152, 1);
-    overflow: hidden;
 }
 
 .wrapper {
+    margin-top: -20px;
     -webkit-transition: all 400ms;
     -moz-transition: all 400ms;
     -ms-transition: all 400ms;
@@ -28,15 +28,18 @@ p {
     font-weight: normal;
     font-family: 'Muli', sans-serif;
     color: rgba(212, 11, 41, 1);
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
 }
 
 canvas {
-    padding-top: 1vh;
     margin: 0 auto;
     width: 100%;
     width: 900px;
     height: 500px;
     background-size: 900px 500px;
-    background-position: center center;
     background: rgba(239, 192, 112, 1);
 }

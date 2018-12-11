@@ -14,12 +14,9 @@ bark.onload = function() {
     drawTree();
 }
 
-export function drawTree() {
+export function drawTree(context) {
     const canvas = document.getElementById('canvas');
-    const context = canvas.getContext('2d');
-    context.save();
-    context.translate(70, 270);
-
+    context = canvas.getContext('2d');
     // create a 3 step gradient horizontally across trunk
     const trunkGradient = context.createLinearGradient(-5, -50, 5, -50);
 
@@ -62,8 +59,4 @@ export function drawTree() {
     context.stroke();
     context.fillStyle = 'rgba(31,64,10,1)';
     context.fill();
-    context.fillStyle = 'rgba(99,37,14,1)';
-    context.restore();
 }
-
-window.addEventListener('load', drawTree, true);
