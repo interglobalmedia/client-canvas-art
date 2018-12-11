@@ -3,7 +3,7 @@ import {
 } from '../drawTree/drawTree';
 
 const gravel = new Image();
-gravel.src = '/images/gravel.jpg';
+gravel.src = 'images/gravel.jpg';
 gravel.onload = function() {
     drawTree();
 }
