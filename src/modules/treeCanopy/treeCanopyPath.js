@@ -1,7 +1,4 @@
 export function createCanopyPath(context) {
-    const canvas = document.getElementById('canvas')
-    context = canvas.getContext('2d')
-        // Draw tree canopy
     context.beginPath()
     context.stroke()
     context.moveTo(-25, -50)
