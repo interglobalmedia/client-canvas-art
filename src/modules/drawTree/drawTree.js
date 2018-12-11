@@ -3,13 +3,13 @@ import {
 } from '../treeCanopy/treeCanopyPath';
 
 const gravel = new Image();
-gravel.src = '/images/gravel.jpg';
+gravel.src = 'images/gravel.jpg';
 gravel.onload = function() {
     drawTree();
 }
 
 const bark = new Image();
-bark.src = '/images/bark.jpg';
+bark.src = 'images/bark.jpg';
 bark.onload = function() {
     drawTree();
 }
