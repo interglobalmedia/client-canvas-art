@@ -25,7 +25,12 @@ export function curvyPath() {
 
     // draw path in a wide brown stroke
     context.strokeStyle = context.createPattern(gravel, 'repeat');
-    context.lineWidth = 20;
+    context.lineWidth = 30;
+    context.stroke();
+    context.shadowColor = 'rgba(94, 62, 0, 1)';
+    context.shadowBlur = 5;
+    context.shadowOffsetX = 2;
+    context.shadowOffsetY = 3;
     context.stroke();
 
     // restore the previous canvas state
