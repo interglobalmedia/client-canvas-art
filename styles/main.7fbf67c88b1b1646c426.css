@@ -7,18 +7,14 @@
 body,
 html {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   margin: 0;
   border: 0;
-  background: #ffcc98; }
-
-.wrapper___1kG3C {
-  margin-top: -20px;
-  transition: all 400ms; }
+  background: #ffcc98;
+  overflow: hidden; }
 
 p {
   font-size: 1.3rem;
-  text-align: center;
   font-weight: normal;
   font-family: 'Muli', sans-serif;
   color: #d40b29;
@@ -26,7 +22,8 @@ p {
   left: 0;
   top: 0;
   bottom: 0;
-  right: 0; }
+  right: 0;
+  margin: auto; }
 
 canvas {
   margin: 0 auto;
@@ -34,7 +31,11 @@ canvas {
   width: 900px;
   height: 500px;
   background-size: 900px 500px;
+  background-position: center center;
   background: #efc070; }
+
+p #support___1zTRa {
+  visibility: hidden; }
 
 .Site___1sLYo {
   display: flex;
@@ -67,4 +68,11 @@ footer p {
   letter-spacing: 0.1em;
   font-size: 75%; }
 
+.canvas___23U-4 {
+  margin: 0 auto;
+  width: 100%;
+  width: 900px;
+  height: 500px;
+  background-size: 900px 500px;
+  background: #efc070; }
 
