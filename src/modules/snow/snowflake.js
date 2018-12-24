@@ -53,7 +53,7 @@ export function drawAFrame() {
     // By only darkening most of the time, we create lightning flashes
     if (Math.random() > 0.01) {
         context.globalAlpha = 0.5;
-        context.fillStyle = '#dcdcdc';
+        context.fillStyle = '#000';
         context.fillRect(0, 0, 900, 500);
         context.globalAlpha = 1.0;
     }
