@@ -1,10 +1,7 @@
 const webpack = require('webpack')
 const merge = require('webpack-merge')
-
-const ManifestPlugin = require('webpack-manifest-plugin')
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
-const Visualizer = require('webpack-visualizer-plugin')
 
 const baseConfig = require('./webpack.base.config')
 
@@ -35,7 +32,6 @@ const prodConfiguration = env => {
                     }
                 }
             },
-            runtimeChunk: 'single',
             minimizer: [
                 new UglifyJSPlugin({
                     cache: true,
@@ -46,13 +42,7 @@ const prodConfiguration = env => {
             ]
         },
         plugins: [
-            new ManifestPlugin({
-                fileName: 'asset-manifest.json'
-            }),
-            new webpack.HashedModuleIdsPlugin(),
-            new Visualizer({
-                filename: './statistics.html'
-            })
+            new webpack.HashedModuleIdsPlugin()
         ]
     }])
 }
