@@ -11,6 +11,9 @@ import {
 import {
     curvyPath
 } from '../curvyPath/curvyPath';
+import {
+    drawflakes
+} from '../snow/snowflake'
 
 export function resizeCanvas() {
     const canvas = document.getElementById('canvas');
@@ -49,10 +52,8 @@ export function drawCanvas() {
     context.fillRect(0, 0, canvas.width, canvas.height);
     context.clearRect(0, 0, canvas.width, canvas.height);
     context.strokeRect(-5, 0, canvas.width, canvas.height);
-    canvas.innerHTML = `<canvas id="canvas" class="${styles.canvas}">< /canvas>`;
+    canvas.innerHTML = '<canvas id="canvas" class"`${styles.canvas}`">< /canvas>';
     displayText();
     curvyPath();
     drawTrees();
-
-
 }
