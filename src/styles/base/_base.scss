@@ -12,6 +12,7 @@ html {
     border: 0;
     background: rgba(255, 204, 152, 1);
     overflow: hidden;
+    font-family: 'Muli', sans-serif;
 }
 
 p {
@@ -35,6 +36,23 @@ canvas {
     background-size: 900px 500px;
     background-position: center center;
     background: rgba(239, 192, 112, 1);
+    @media #{$max-899} {
+        display: none;
+    }
+}
+
+h2 {
+    color: green;
+    margin: 35vh auto;
+    width: 95%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    @media #{$min-900} {
+        display: none;
+    }
 }
 
 p #support {
